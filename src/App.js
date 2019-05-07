@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import Content from "./components/Content/Content";
+import Main from "./components/Main/Main";
 
 function App() {
   return (
     <div class="wrapper">
       <div class="headlineWrapper">
-        <h1>/Product Management</h1>
+        <h1 id="Home">/Product Management</h1>
       </div>
       <div class="creatorWrapper" />
       <div class="descriptionWrapper">
@@ -20,10 +20,10 @@ function App() {
           imperdiet proin fermentum.
         </p>
       </div>
-      <div class="contentWrapper">
-        <Content name="Halll0" />
+      <div class="MainContentWrapper">
+        <Main />
       </div>
-      <div class="five">Five</div>
+      {/* <div class="five">Five</div> */}
     </div>
   );
 }

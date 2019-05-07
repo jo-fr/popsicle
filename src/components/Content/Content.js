@@ -1,18 +1,29 @@
 import React from "react";
+
 import "./Content.css";
 import Card from "../Card/Card";
 
 class Content extends React.Component {
   render() {
+    const type = this.props.type;
     return (
       <div class="wrapperContent">
-        <div class="menubar">menubar</div>
-        <div class="headline">
-          <h2>Books we recommend</h2>
+        <div class="headline" id={type}>
+          <h2>{type} we recommend</h2>
         </div>
+        <div class="seeAll">See All</div>
         <div class="cards">
-          <Card />
-          <Card />
+          {this.props.data.map(element => {
+            console.log(element.headline);
+            return (
+              <Card
+                pic={element.pic}
+                headline={element.headline}
+                context={element.context}
+                width={this.props.width}
+              />
+            );
+          })}
         </div>
       </div>
     );

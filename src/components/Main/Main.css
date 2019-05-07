@@ -1,0 +1,41 @@
+.wrapperMain {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.menubar {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  /* background-color: yellow; */
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  border-bottom: 3px solid black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  border-bottom: 3px solid black;
+}
+
+.contentWrapper {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
