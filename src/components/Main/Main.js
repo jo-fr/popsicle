@@ -13,8 +13,8 @@ class Main extends React.Component {
             <a class="active" href="#Home">
               Home
             </a>
-            <a href="#books">Books</a>
-            <a href="#videos">Videos</a>
+            <a href="#Books">Books</a>
+            <a href="#Videos">Videos</a>
             <a href="#onlinecourses">Online Courses</a>
             <a href="#podcasts">Podcasts</a>
             <a href="#docs">Docs</a>

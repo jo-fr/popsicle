@@ -5,11 +5,11 @@ import Card from "../Card/Card";
 
 class Content extends React.Component {
   render() {
-    console.log(this.props.data);
+    const type = this.props.type;
     return (
       <div class="wrapperContent">
-        <div class="headline">
-          <h2>{this.props.type} we recommend</h2>
+        <div class="headline" id={type}>
+          <h2>{type} we recommend</h2>
         </div>
         <div class="seeAll">See All</div>
         <div class="cards">
