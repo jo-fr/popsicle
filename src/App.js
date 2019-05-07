@@ -21,7 +21,7 @@ function App() {
         </p>
       </div>
       <div class="contentWrapper">
-        <Content name="Halll0" />
+        <Content />
       </div>
       {/* <div class="five">Five</div> */}
     </div>

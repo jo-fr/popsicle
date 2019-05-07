@@ -26,7 +26,18 @@ class Content extends React.Component {
     ];
     return (
       <div class="wrapperContent">
-        <div class="menubar">menubar</div>
+        <div class="menubar">
+          <div class="topnav">
+            <a class="active" href="#Home">
+              Home
+            </a>
+            <a href="#books">Books</a>
+            <a href="#videos">Videos</a>
+            <a href="#onlinecourses">Online Courses</a>
+            <a href="#podcasts">Podcasts</a>
+            <a href="#docs">Docs</a>
+          </div>
+        </div>
         <div class="headline">
           <h2>Books we recommend</h2>
         </div>
