@@ -22,7 +22,7 @@ class Main extends React.Component {
         </div>
         <div class="contentWrapper">
           <Content data={books} type="Books" width="80%" />
-          <Content data={videos} type="Videos" width="95%" />
+          <Content data={videos} type="Videos" width="100%" />
         </div>
       </div>
     );
