@@ -1,5 +1,6 @@
 import React from "react";
-import "./Content.css";
+//import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "./Main.css";
 import Card from "../Card/Card";
 
 class Content extends React.Component {
