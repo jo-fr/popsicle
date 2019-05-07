@@ -4,6 +4,20 @@ import Card from "../Card/Card";
 
 class Content extends React.Component {
   render() {
+    var data = [
+      {
+        pic: "https://covers.oreillystatic.com/images/0636920020141/lrg.jpg",
+        headline: "Running Lean: Iterate form Plan A to a Plan That Works",
+        context:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod in pellentesque massa placerat duis ultricies lacus sed."
+      },
+      {
+        pic: "https://images-na.ssl-images-amazon.com/images/I/71iTueU1pBL.jpg",
+        headline: "Hooked: how to build habit-forming products",
+        context:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod in pellentesque massa placerat duis ultricies lacus sed."
+      }
+    ];
     return (
       <div class="wrapperContent">
         <div class="menubar">menubar</div>
@@ -11,8 +25,16 @@ class Content extends React.Component {
           <h2>Books we recommend</h2>
         </div>
         <div class="cards">
-          <Card />
-          <Card />
+          {data.map(element => {
+            console.log(element.headline);
+            return (
+              <Card
+                pic={element.pic}
+                headline={element.headline}
+                context={element.context}
+              />
+            );
+          })}
         </div>
       </div>
     );

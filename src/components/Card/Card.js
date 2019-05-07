@@ -6,18 +6,11 @@ class Card extends React.Component {
     return (
       <div class="wrapperCard">
         <div class="picture">
-          <img
-            width="100%"
-            src="https://covers.oreillystatic.com/images/0636920020141/lrg.jpg"
-          />
+          <img width="100%" src={this.props.pic} />
         </div>
         <div class="context">
-          <h3>Running Lean: Iterate form Plan A to a Plan That Works</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod
-            in pellentesque massa placerat duis ultricies lacus sed.
-          </p>
+          <h3>{this.props.headline}</h3>
+          <p>{this.props.context}</p>
         </div>
       </div>
     );
