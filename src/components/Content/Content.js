@@ -16,6 +16,12 @@ class Content extends React.Component {
         headline: "Hooked: how to build habit-forming products",
         context:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod in pellentesque massa placerat duis ultricies lacus sed."
+      },
+      {
+        pic: "https://images-na.ssl-images-amazon.com/images/I/41iRRYgWxYL.jpg",
+        headline: "Inspired: how to create tech products customers love",
+        context:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod in pellentesque massa placerat duis ultricies lacus sed."
       }
     ];
     return (
@@ -24,6 +30,7 @@ class Content extends React.Component {
         <div class="headline">
           <h2>Books we recommend</h2>
         </div>
+        <div class="seeAll">See All</div>
         <div class="cards">
           {data.map(element => {
             console.log(element.headline);

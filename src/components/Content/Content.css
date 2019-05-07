@@ -1,15 +1,36 @@
 .wrapperContent {
-  /* display: grid;
-  /* grid-template-columns: 30% 70%; 
-  grid-auto-rows: minmax(70px, auto); */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: minmax(50px, auto);
 }
 
-.headline {
-  /* grid-column: 1 / 3; */
+.menubar {
+  grid-column: 1 / 3;
+  grid-row: 1;
   /* background-color: yellow; */
 }
 
+.headline {
+  grid-column: 1;
+  grid-row: 2;
+  /* background-color: yellow;*/
+}
+
+.seeAll {
+  grid-column: 2;
+  grid-row: 2;
+
+  text-align: right;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  /* font-weight: 180; */
+  color: grey;
+
+  /* background-color: rgb(252, 106, 106); */
+}
+
 .cards {
-  /* grid-column: 1 / 3; */
+  grid-column: 1 / 3;
+  grid-row: 3;
   /* background-color: rgb(115, 221, 194); */
 }

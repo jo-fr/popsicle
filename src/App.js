@@ -23,7 +23,7 @@ function App() {
       <div class="contentWrapper">
         <Content name="Halll0" />
       </div>
-      <div class="five">Five</div>
+      {/* <div class="five">Five</div> */}
     </div>
   );
 }
