@@ -1,0 +1,14 @@
+.wrapperCard {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-auto-rows: minmax(70px, auto);
+}
+
+.picture {
+  grid-column: 1;
+  /* background-color: rgb(0, 0, 0); */
+}
+.context {
+  grid-column: 2;
+  /* background-color: blue; */
+}
