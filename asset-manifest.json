@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ergotin/static/css/main.c4b01e59.chunk.css",
-    "main.js": "/ergotin/static/js/main.b81bfe91.chunk.js",
-    "main.js.map": "/ergotin/static/js/main.b81bfe91.chunk.js.map",
+    "main.css": "/ergotin/static/css/main.bb4117bf.chunk.css",
+    "main.js": "/ergotin/static/js/main.9ce2695a.chunk.js",
+    "main.js.map": "/ergotin/static/js/main.9ce2695a.chunk.js.map",
     "runtime~main.js": "/ergotin/static/js/runtime~main.7143e91a.js",
     "runtime~main.js.map": "/ergotin/static/js/runtime~main.7143e91a.js.map",
     "static/js/2.d6a534e5.chunk.js": "/ergotin/static/js/2.d6a534e5.chunk.js",
     "static/js/2.d6a534e5.chunk.js.map": "/ergotin/static/js/2.d6a534e5.chunk.js.map",
     "index.html": "/ergotin/index.html",
-    "precache-manifest.8b1bd0a7ba61695993f7a064388ad559.js": "/ergotin/precache-manifest.8b1bd0a7ba61695993f7a064388ad559.js",
+    "precache-manifest.bf758312123f27de7b1f8d5b1f249158.js": "/ergotin/precache-manifest.bf758312123f27de7b1f8d5b1f249158.js",
     "service-worker.js": "/ergotin/service-worker.js",
-    "static/css/main.c4b01e59.chunk.css.map": "/ergotin/static/css/main.c4b01e59.chunk.css.map"
+    "static/css/main.bb4117bf.chunk.css.map": "/ergotin/static/css/main.bb4117bf.chunk.css.map"
   }
 }
