@@ -9,7 +9,7 @@ class Content extends React.Component {
     return (
       <div class="wrapperContent">
         <div class="headline">
-          <h2>Books we recommend</h2>
+          <h2>{this.props.type} we recommend</h2>
         </div>
         <div class="seeAll">See All</div>
         <div class="cards">
@@ -20,6 +20,7 @@ class Content extends React.Component {
                 pic={element.pic}
                 headline={element.headline}
                 context={element.context}
+                width={this.props.width}
               />
             );
           })}

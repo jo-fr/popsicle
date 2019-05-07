@@ -2,7 +2,7 @@ import React from "react";
 //import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./Main.css";
 import Content from "../Content/Content";
-import { books } from "../../data/data";
+import { books, videos } from "../../data/data";
 
 class Main extends React.Component {
   render() {
@@ -21,7 +21,8 @@ class Main extends React.Component {
           </div>
         </div>
         <div class="contentWrapper">
-          <Content data={books} />
+          <Content data={books} type="Books" width="80%" />
+          <Content data={videos} type="Videos" width="95%" />
         </div>
       </div>
     );
