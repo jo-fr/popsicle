@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Content from "./components/Main/Main";
+import Main from "./components/Main/Main";
 
 function App() {
   return (
@@ -20,8 +20,8 @@ function App() {
           imperdiet proin fermentum.
         </p>
       </div>
-      <div class="contentWrapper">
-        <Content />
+      <div class="MainContentWrapper">
+        <Main />
       </div>
       {/* <div class="five">Five</div> */}
     </div>
