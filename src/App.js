@@ -11,7 +11,10 @@ function App() {
       </div>
       <div class="creatorWrapper">
         <span>Content created by</span>
-        <img src={creatorIMG} />
+        <div class="images">
+          <img src={creatorIMG} />
+          <img src="https://scontent-ber1-1.xx.fbcdn.net/v/t1.0-9/51648762_832552227095302_7942189460031012864_n.jpg?_nc_cat=102&_nc_ht=scontent-ber1-1.xx&oh=a729542ee04fa3fe13a1c7c95a4516fd&oe=5D2B1AC8" />
+        </div>
       </div>
       <div class="descriptionWrapper">
         <p>
