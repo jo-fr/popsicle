@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/ergotin/static/css/main.0c2a5370.chunk.css",
-    "main.js": "/ergotin/static/js/main.9ce2695a.chunk.js",
-    "main.js.map": "/ergotin/static/js/main.9ce2695a.chunk.js.map",
+    "main.css": "/ergotin/static/css/main.0e303d1b.chunk.css",
+    "main.js": "/ergotin/static/js/main.3ee7f020.chunk.js",
+    "main.js.map": "/ergotin/static/js/main.3ee7f020.chunk.js.map",
     "runtime~main.js": "/ergotin/static/js/runtime~main.7143e91a.js",
     "runtime~main.js.map": "/ergotin/static/js/runtime~main.7143e91a.js.map",
-    "static/js/2.d6a534e5.chunk.js": "/ergotin/static/js/2.d6a534e5.chunk.js",
-    "static/js/2.d6a534e5.chunk.js.map": "/ergotin/static/js/2.d6a534e5.chunk.js.map",
+    "static/js/2.98dcc9dd.chunk.js": "/ergotin/static/js/2.98dcc9dd.chunk.js",
+    "static/js/2.98dcc9dd.chunk.js.map": "/ergotin/static/js/2.98dcc9dd.chunk.js.map",
     "index.html": "/ergotin/index.html",
-    "precache-manifest.ad858a0f309ebb0f8644899a3ec676e4.js": "/ergotin/precache-manifest.ad858a0f309ebb0f8644899a3ec676e4.js",
+    "precache-manifest.2090968cc4ad1d297706a36120816861.js": "/ergotin/precache-manifest.2090968cc4ad1d297706a36120816861.js",
     "service-worker.js": "/ergotin/service-worker.js",
-    "static/css/main.0c2a5370.chunk.css.map": "/ergotin/static/css/main.0c2a5370.chunk.css.map"
+    "static/css/main.0e303d1b.chunk.css.map": "/ergotin/static/css/main.0e303d1b.chunk.css.map",
+    "static/media/foto_klein.jpg": "/ergotin/static/media/foto_klein.bf401f4d.jpg"
   }
 }
