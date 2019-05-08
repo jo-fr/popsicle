@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ergotin/static/css/main.bb4117bf.chunk.css",
+    "main.css": "/ergotin/static/css/main.0c2a5370.chunk.css",
     "main.js": "/ergotin/static/js/main.9ce2695a.chunk.js",
     "main.js.map": "/ergotin/static/js/main.9ce2695a.chunk.js.map",
     "runtime~main.js": "/ergotin/static/js/runtime~main.7143e91a.js",
@@ -8,8 +8,8 @@
     "static/js/2.d6a534e5.chunk.js": "/ergotin/static/js/2.d6a534e5.chunk.js",
     "static/js/2.d6a534e5.chunk.js.map": "/ergotin/static/js/2.d6a534e5.chunk.js.map",
     "index.html": "/ergotin/index.html",
-    "precache-manifest.bf758312123f27de7b1f8d5b1f249158.js": "/ergotin/precache-manifest.bf758312123f27de7b1f8d5b1f249158.js",
+    "precache-manifest.ad858a0f309ebb0f8644899a3ec676e4.js": "/ergotin/precache-manifest.ad858a0f309ebb0f8644899a3ec676e4.js",
     "service-worker.js": "/ergotin/service-worker.js",
-    "static/css/main.bb4117bf.chunk.css.map": "/ergotin/static/css/main.bb4117bf.chunk.css.map"
+    "static/css/main.0c2a5370.chunk.css.map": "/ergotin/static/css/main.0c2a5370.chunk.css.map"
   }
 }
