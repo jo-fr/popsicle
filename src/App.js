@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import creatorIMG from "./assets/creators/foto_klein.jpg";
 import Main from "./components/Main/Main";
 
 function App() {
@@ -8,7 +9,10 @@ function App() {
       <div class="headlineWrapper">
         <h1 id="Home">/Product Management</h1>
       </div>
-      <div class="creatorWrapper" />
+      <div class="creatorWrapper">
+        <span>Content created by</span>
+        <img src={creatorIMG} />
+      </div>
       <div class="descriptionWrapper">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
