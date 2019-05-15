@@ -1,40 +1,4 @@
-.wrapper {
+.App {
   width: 80%;
   margin: 0px auto;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-auto-rows: minmax(50px, auto);
-
-  font-family: "Helvetica Neue";
-  /* font-weight: 150; */
-}
-
-h1 {
-  font-weight: 200;
-}
-
-.headlineWrapper {
-  grid-column: 1;
-  grid-row: 1;
-  /* background-color: blue; */
-}
-.creatorWrapper {
-  grid-column: 2;
-  grid-row: 1;
-  /* background-color: yellow; */
-}
-.descriptionWrapper {
-  grid-column: 1 / 3;
-  grid-row: 2;
-  /* background-color: rgb(189, 172, 172); */
-}
-.MainContentWrapper {
-  grid-column: 1 / 3;
-  grid-row: 3 / 10;
-  /* background-color: green; */
-}
-.five {
-  grid-column: 1 / 3;
-  grid-row: 10;
-  /* background-color: pink; */
 }

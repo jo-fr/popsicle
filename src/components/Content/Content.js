@@ -14,7 +14,6 @@ class Content extends React.Component {
         <div className="seeAll">See All</div>
         <div className="cards">
           {this.props.data.map(element => {
-            console.log(element.headline);
             return (
               <Card
                 pic={element.pic}

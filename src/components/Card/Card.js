@@ -6,7 +6,11 @@ class Card extends React.Component {
     return (
       <div className="wrapperCard">
         <div className="picture">
-          <img src={this.props.pic} width={this.props.width} />
+          <img
+            src={this.props.pic}
+            width={this.props.width}
+            alt="Product Picture"
+          />
         </div>
         <div className="context">
           <h3>{this.props.headline}</h3>
