@@ -7,12 +7,12 @@ class Content extends React.Component {
   render() {
     const type = this.props.type;
     return (
-      <div class="wrapperContent">
-        <div class="headline" id={type}>
+      <div className="wrapperContent">
+        <div className="headline" id={type}>
           <h2>{type} we recommend</h2>
         </div>
-        <div class="seeAll">See All</div>
-        <div class="cards">
+        <div className="seeAll">See All</div>
+        <div className="cards">
           {this.props.data.map(element => {
             console.log(element.headline);
             return (

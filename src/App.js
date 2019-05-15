@@ -21,22 +21,20 @@ class App extends React.Component {
       console.log(user);
       if (user) {
         this.setState({ user });
-        localStorage.setItem("user", user.uid);
       } else {
         this.setState({ user: null });
-        localStorage.removeItem("user");
       }
     });
   }
 
   render() {
     return (
-      <div class="wrapper">
-        <div class="headlineWrapper">
+      <div className="wrapper">
+        <div className="headlineWrapper">
           <h1 id="Home">/Product Management</h1>
         </div>
-        <div class="creatorWrapper" />
-        <div class="descriptionWrapper">
+        <div className="creatorWrapper" />
+        <div className="descriptionWrapper">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. A lacus
@@ -47,7 +45,7 @@ class App extends React.Component {
             felis imperdiet proin fermentum.
           </p>
         </div>
-        <div class="MainContentWrapper">
+        <div className="MainContentWrapper">
           <Main />
         </div>
         {/* <div class="five">Five</div> */}

@@ -7,10 +7,10 @@ import { books, videos } from "../../data/data";
 class Main extends React.Component {
   render() {
     return (
-      <div class="wrapperMain">
-        <div class="menubar">
-          <div class="topnav">
-            <a class="active" href="#Home">
+      <div className="wrapperMain">
+        <div className="menubar">
+          <div className="topnav">
+            <a className="active" href="#Home">
               Home
             </a>
             <a href="#Books">Books</a>
@@ -20,7 +20,7 @@ class Main extends React.Component {
             <a href="#docs">Docs</a>
           </div>
         </div>
-        <div class="contentWrapper">
+        <div className="contentWrapper">
           <Content data={books} type="Books" width="80%" />
           <Content data={videos} type="Videos" width="100%" />
         </div>
