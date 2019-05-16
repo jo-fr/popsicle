@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Main from "../Main/Main";
+import fire from "../../config/Fire";
 
 class Home extends React.Component {
   constructor() {
@@ -11,8 +12,12 @@ class Home extends React.Component {
   }
 
   componentWillMount() {
-    this.setState({ user: this.props.user });
+    this.setState({ user: fire.auth().currentUser });
     console.log(this.state.user);
+  }
+
+  logout() {
+    fire.auth().signOut();
   }
 
   render() {
@@ -22,7 +27,10 @@ class Home extends React.Component {
         <div className="headlineWrapper">
           <h1 id="Home">/Product Management</h1>
         </div>
-        <div className="creatorWrapper">Hallo {user.email}</div>
+        <div className="creatorWrapper">
+          Hallo {user.email}
+          <button onClick={this.logout}>Logout</button>
+        </div>
         <div className="descriptionWrapper">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
