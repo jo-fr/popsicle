@@ -12,13 +12,11 @@ class Content extends React.Component {
 
   componentWillMount() {
     this.setState({ data: this.props.data });
-    //console.log(this.state.data);
   }
   render() {
-    const type = Object.keys(this.props.data)[0];
-    const data = this.props.data[type];
-    console.log(type);
-    console.log(data);
+    const type = Object.keys(this.state.data)[0];
+    const data = this.state.data[type];
+
     // console.log(data[0]["name"]);
     return (
       <div className="wrapperContent">
@@ -30,6 +28,7 @@ class Content extends React.Component {
           {data.map(element => {
             return (
               <Card
+                key={element["id"]}
                 pic={element["pic"]}
                 headline={element["name"]}
                 url={element["url"]}

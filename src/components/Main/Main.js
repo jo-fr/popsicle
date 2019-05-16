@@ -1,9 +1,7 @@
 import React from "react";
-//import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./Main.css";
 import Content from "../Content/Content";
 import airtableBase from "../../config/Airtable";
-import { books, videos } from "../../data/data";
 
 class Main extends React.Component {
   constructor() {
@@ -13,9 +11,7 @@ class Main extends React.Component {
     };
   }
 
-  fetchData = () => {};
-
-  async componentDidMount() {
+  async fetchData() {
     airtableBase("Table 1")
       .select({
         view: "Grid view"
@@ -40,6 +36,7 @@ class Main extends React.Component {
           records.forEach(record => {
             if (record.get("Category") === category) {
               obj.push({
+                id: record["id"],
                 name: record.get("Name"),
                 description: record.get("Copy/Description"),
                 url: record.get("URL"),
@@ -54,6 +51,10 @@ class Main extends React.Component {
         this.setState({ data: data });
         // console.log(this.state);
       });
+  }
+
+  componentDidMount() {
+    this.fetchData();
   }
 
   render() {
@@ -73,7 +74,13 @@ class Main extends React.Component {
         </div>
         <div className="contentWrapper">
           {this.state.data.map(element => {
-            return <Content data={element} width="100%" />;
+            return (
+              <Content
+                key={Object.keys(element)[0]}
+                data={element}
+                width="100%"
+              />
+            );
           })}
         </div>
       </div>

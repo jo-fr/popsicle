@@ -13,7 +13,6 @@ class Home extends React.Component {
 
   componentWillMount() {
     this.setState({ user: fire.auth().currentUser });
-    console.log(this.state.user);
   }
 
   logout() {
@@ -22,6 +21,7 @@ class Home extends React.Component {
 
   render() {
     const user = this.state.user;
+
     return (
       <div className="wrapper">
         <div className="headlineWrapper">
@@ -45,7 +45,6 @@ class Home extends React.Component {
         <div className="MainContentWrapper">
           <Main />
         </div>
-        {/* <div class="five">Five</div> */}
       </div>
     );
   }

@@ -23,7 +23,7 @@ h1 {
 .creatorWrapper {
   grid-column: 2;
   grid-row: 1;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 .descriptionWrapper {
   grid-column: 1 / 3;
