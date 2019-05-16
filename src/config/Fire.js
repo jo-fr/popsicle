@@ -9,7 +9,7 @@ const firebaseConfig = {
   projectId: "ergotin-45355",
   storageBucket: "ergotin-45355.appspot.com",
   messagingSenderId: "878869459620",
-  appId: "1:878869459620:web:1c6a83006362610d"
+  appId: "1:878869459620:web:d7e424eefec78444"
 };
 
 const fire = firebase.initializeApp(firebaseConfig);
