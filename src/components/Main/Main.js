@@ -9,17 +9,13 @@ class Main extends React.Component {
   constructor() {
     super();
     this.state = {
-      Book: [],
-      Podcast: [],
-      Video: [],
-      "Online Course": [],
-      Docs: []
+      data: []
     };
   }
 
   fetchData = () => {};
 
-  async componentWillMount() {
+  async componentDidMount() {
     airtableBase("Table 1")
       .select({
         view: "Grid view"
@@ -37,6 +33,7 @@ class Main extends React.Component {
           "Online Course",
           "Docs"
         ];
+        var data = [];
 
         categories.forEach(category => {
           var obj = [];
@@ -47,14 +44,15 @@ class Main extends React.Component {
                 description: record.get("Copy/Description"),
                 url: record.get("URL"),
                 notes: record.get("Notes"),
-                claps: record.get("claps")
+                claps: record.get("claps"),
+                pic: record.get("picture")
               });
             }
           });
-          this.setState({ [category]: obj });
+          data.push({ [category]: obj });
         });
-        console.log("state");
-        console.log(this.state["Online Course"]);
+        this.setState({ data: data });
+        // console.log(this.state);
       });
   }
 
@@ -74,8 +72,9 @@ class Main extends React.Component {
           </div>
         </div>
         <div className="contentWrapper">
-          <Content data={books} type="Books" width="80%" />
-          <Content data={videos} type="Videos" width="100%" />
+          {this.state.data.map(element => {
+            return <Content data={element} width="100%" />;
+          })}
         </div>
       </div>
     );

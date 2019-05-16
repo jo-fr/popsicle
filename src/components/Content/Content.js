@@ -3,8 +3,23 @@ import "./Content.css";
 import Card from "../Card/Card";
 
 class Content extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      data: []
+    };
+  }
+
+  componentWillMount() {
+    this.setState({ data: this.props.data });
+    //console.log(this.state.data);
+  }
   render() {
-    const type = this.props.type;
+    const type = Object.keys(this.props.data)[0];
+    const data = this.props.data[type];
+    console.log(type);
+    console.log(data);
+    // console.log(data[0]["name"]);
     return (
       <div className="wrapperContent">
         <div className="headline" id={type}>
@@ -12,16 +27,16 @@ class Content extends React.Component {
         </div>
         <div className="seeAll">See All</div>
         <div className="cards">
-          {/* {this.props.data.map(element => {
+          {data.map(element => {
             return (
               <Card
-                pic={element.pic}
-                headline={element.headline}
-                context={element.context}
+                pic={element["pic"]}
+                headline={element["name"]}
+                context={element["description"]}
                 width={this.props.width}
               />
             );
-          })} */}
+          })}
         </div>
       </div>
     );
