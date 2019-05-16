@@ -47,7 +47,7 @@ class Login extends Component {
       <div className="col-md-6">
         <form>
           <div className="form-group">
-            <label for="exampleInputEmail1">Email address</label>
+            <label htmlFor="exampleInputEmail1">Email address</label>
             <input
               value={this.state.email}
               onChange={this.handleChange}
@@ -63,7 +63,7 @@ class Login extends Component {
             </small>
           </div>
           <div className="form-group">
-            <label for="exampleInputPassword1">Password</label>
+            <label htmlFor="exampleInputPassword1">Password</label>
             <input
               value={this.state.password}
               onChange={this.handleChange}

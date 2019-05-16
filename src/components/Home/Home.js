@@ -3,13 +3,26 @@ import "./Home.css";
 import Main from "../Main/Main";
 
 class Home extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      user: null
+    };
+  }
+
+  componentWillMount() {
+    this.setState({ user: this.props.user });
+    console.log(this.state.user);
+  }
+
   render() {
+    const user = this.state.user;
     return (
       <div className="wrapper">
         <div className="headlineWrapper">
           <h1 id="Home">/Product Management</h1>
         </div>
-        <div className="creatorWrapper" />
+        <div className="creatorWrapper">Hallo {user.email}</div>
         <div className="descriptionWrapper">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
