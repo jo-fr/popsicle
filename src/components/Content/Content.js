@@ -1,5 +1,4 @@
 import React from "react";
-import airtableBase from "../../config/Airtable";
 import "./Content.css";
 import Card from "../Card/Card";
 
@@ -13,7 +12,7 @@ class Content extends React.Component {
         </div>
         <div className="seeAll">See All</div>
         <div className="cards">
-          {this.props.data.map(element => {
+          {/* {this.props.data.map(element => {
             return (
               <Card
                 pic={element.pic}
@@ -22,7 +21,7 @@ class Content extends React.Component {
                 width={this.props.width}
               />
             );
-          })}
+          })} */}
         </div>
       </div>
     );

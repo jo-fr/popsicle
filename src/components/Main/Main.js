@@ -2,9 +2,62 @@ import React from "react";
 //import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./Main.css";
 import Content from "../Content/Content";
+import airtableBase from "../../config/Airtable";
 import { books, videos } from "../../data/data";
 
 class Main extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      Book: [],
+      Podcast: [],
+      Video: [],
+      "Online Course": [],
+      Docs: []
+    };
+  }
+
+  fetchData = () => {};
+
+  async componentWillMount() {
+    airtableBase("Table 1")
+      .select({
+        view: "Grid view"
+      })
+      .firstPage((err, records) => {
+        if (err) {
+          console.error(err);
+          return;
+        }
+
+        const categories = [
+          "Book",
+          "Podcast",
+          "Video",
+          "Online Course",
+          "Docs"
+        ];
+
+        categories.forEach(category => {
+          var obj = [];
+          records.forEach(record => {
+            if (record.get("Category") === category) {
+              obj.push({
+                name: record.get("Name"),
+                description: record.get("Copy/Description"),
+                url: record.get("URL"),
+                notes: record.get("Notes"),
+                claps: record.get("claps")
+              });
+            }
+          });
+          this.setState({ [category]: obj });
+        });
+        console.log("state");
+        console.log(this.state["Online Course"]);
+      });
+  }
+
   render() {
     return (
       <div className="wrapperMain">
