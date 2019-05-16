@@ -2,7 +2,7 @@
   "name": "ergotin",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jo-fr.github.io/ergotin/",
+  "homepage": "https://jo-fr.github.io/popsicle/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
