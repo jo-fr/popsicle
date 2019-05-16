@@ -1,6 +1,6 @@
 import firebase from "firebase/app";
 import "firebase/auth";
-import fireKey from "../.env.js";
+import { fireKey } from "./.env.js";
 
 const firebaseConfig = {
   apiKey: fireKey,

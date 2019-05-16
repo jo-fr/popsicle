@@ -1,9 +1,9 @@
-import Airtable from airtable
-import airtableKey from "./.env.js";
+import { airtableKey } from "./.env.js";
 
-var Airtable = require('airtable');
+var Airtable = require("airtable");
 Airtable.configure({
-    endpointUrl: 'https://api.airtable.com',
-    apiKey: airtableKey
+  endpointUrl: "https://api.airtable.com",
+  apiKey: airtableKey
 });
-var base = Airtable.base('apporjVCnz1NflfHQ');
+var airtabelBase = Airtable.base("apporjVCnz1NflfHQ");
+export default airtabelBase;

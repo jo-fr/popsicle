@@ -1,5 +1,5 @@
 import React from "react";
-
+import airtableBase from "../../config/Airtable";
 import "./Content.css";
 import Card from "../Card/Card";
 
