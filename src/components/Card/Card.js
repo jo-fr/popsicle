@@ -13,7 +13,7 @@ class Card extends React.Component {
           />
         </div>
         <div className="context">
-          <a onClick={() => window.open(this.props.url, "_blank")} href="">
+          <a onClick={() => window.open(this.props.url, "_blank")} href="#">
             <h3>{this.props.headline}</h3>
           </a>
           <p>{this.props.context}</p>
