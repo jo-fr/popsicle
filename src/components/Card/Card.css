@@ -6,6 +6,16 @@
   margin-bottom: 15px;
 }
 
+.wrapperCard a {
+  text-decoration: none;
+  color: black;
+}
+
+.wrapperCard a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
 .picture {
   grid-column: 1;
   text-align: center;

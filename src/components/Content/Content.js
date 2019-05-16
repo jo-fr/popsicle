@@ -32,6 +32,7 @@ class Content extends React.Component {
               <Card
                 pic={element["pic"]}
                 headline={element["name"]}
+                url={element["url"]}
                 context={element["description"]}
                 width={this.props.width}
               />
