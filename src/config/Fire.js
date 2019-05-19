@@ -1,7 +1,8 @@
 import firebase from "firebase/app";
 import "firebase/auth";
-import { fireKey } from "./.env.js";
+// import { fireKey } from "./.env.js";
 
+const fireKey = process.env.fireKey;
 const firebaseConfig = {
   apiKey: fireKey,
   authDomain: "ergotin-45355.firebaseapp.com",

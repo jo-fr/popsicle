@@ -1,5 +1,6 @@
-import { airtableKey } from "./.env.js";
+//import { airtableKey } from "./.env.js";
 
+const airtableKey = process.env.airtableKey;
 var Airtable = require("airtable");
 Airtable.configure({
   endpointUrl: "https://api.airtable.com",
