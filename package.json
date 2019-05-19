@@ -2,7 +2,7 @@
   "name": "popsicle",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jo-fr.github.io/popsicle/",
+  "homepage": ".",
   "dependencies": {
     "airtable": "^0.6.0",
     "dotenv": "^8.0.0",
